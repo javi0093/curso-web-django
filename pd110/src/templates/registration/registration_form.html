@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-sm-6 mx-auto">
+      <h2 class="text-align-center"><strong>Registrate</strong></h2>
+      <form method="post" action=".">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <br>
+        <div class="d-grid gap-2">
+          <input class = "btn btn-primary" type="submit" value="{% trans 'Registrarme' %}" />
+        </div>
+        <br>
+        <p class="text-align-center">{% trans "Ya tienes una cuenta" %}? <a href="{% url 'auth_login' %}">{% trans "Iniciar Sesión" %}</a></p>
+        
+      </form>
+  </div>
+</div>
+
+
+
+{% endblock %}

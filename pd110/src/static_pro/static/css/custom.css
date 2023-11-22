@@ -1,0 +1,48 @@
+.text-align-center{
+    text-align: center;
+  }
+
+
+.text-align-right{
+    text-align: right;
+  }
+
+.margen-login-inicio{
+  margin-right: 2px;
+}
+
+.margen-derecho{
+  margin-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.nav-link:hover {
+  color: rgb(219, 181, 245); /* Cambia el color del texto al pasar el ratón sobre el enlace */
+}
+
+.icon-text {
+  display: flex;
+  align-items: center; /* Esto alinea verticalmente el ícono y el texto */
+}
+
+
+.mi-link {
+  color: white;
+  text-decoration: none;
+}
+
+.mi-link:hover {
+  color: rgb(219, 181, 245); /* Cambia el color del texto al pasar el ratón sobre el enlace */
+  text-decoration: underline;
+}
+
+.prueba{
+      background-color: #1d0542 !important;
+      color: white !important;
+    }
+.tamaño-icono{
+  font-size: 15 em !important;
+}
